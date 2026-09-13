@@ -9,6 +9,8 @@ git config --global --add safe.directory /github/workspace #adding this to safe 
 python3 /usr/bin/feed.py
 
 git add -A && git commit -m "Updated Podcast List for website by the Generator Action"
+git fetch origin main
+git rebase origin/main
 git push --set-upstream origin main
 
 echo "================================="
